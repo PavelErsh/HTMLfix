@@ -1,0 +1,127 @@
+@font-face{
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Black.ttf") format("opentype");
+	font-weight: 900;
+}
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Bold.ttf") format("opentype");
+	font-weight: 700;
+}
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Regular.ttf") format("opentype");
+	font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html{
+    font-size:25px;
+}
+h1{
+    font-size:10rem;
+    line-height: 10rem;
+    font-weight: 900;
+}
+h2{
+    font-size:5rem;
+    line-height: 5rem;
+}
+h3{
+    font-size:3rem;
+    line-height: 3rem;
+}
+.title-bottom p{
+    font-size:10rem;
+    line-height: 10rem;
+    font-weight: 900;
+}
+.header {
+    width: 100%;
+    height: 80vh;
+    padding:0 20px;
+    position: relative;
+    display: flex;
+	align-items: center;
+}
+.header-sub_title {
+    width: 100%;
+    padding: 15px 122px;
+    text-align: center;
+    color: white;
+    background: #2E292A;
+}
+.header-title {
+    position: absolute;
+    top:50%;
+    left: 50%;
+ 	transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.title-top {
+    overflow: hidden;
+ 	background: white;
+    height: 5rem;
+    transition: 0.2s;
+}
+.title-bottom {
+    overflow: hidden;
+ 	background: white;
+    height: 5rem;
+    transition: 0.2s;
+}
+.title-bottom p{
+  position: relative;
+  top: -5rem;
+  color: #6A32E2;
+}
+.title-top h1{
+    color: #F266CB;
+}
+.header-title:hover .title-top{
+    margin-bottom: 7rem;
+}
+.fame_hall {
+    max-width: 1440px;
+    width: 100%;
+    height: 80vh;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.fame_hall-cards {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.fame_hall_card-item {
+   flex-grow:1;
+   height: 432px;
+   transition: 0.5s;
+}
+.fame_hall_card-item:hover{
+    flex-grow: 10;
+ }
+
+.fame_hall_card-item:first-of-type {
+    background: linear-gradient(0deg, rgba(230, 120, 18, 0.49), rgba(230, 120, 18, 0.49)), url('img/back_to_the_future.png') center/cover no-repeat;
+}
+.fame_hall_card-item:nth-of-type(2){
+    background: linear-gradient(0deg, rgba(39, 177, 221, 0.54), rgba(39, 177, 221, 0.54)), url('img/forest_g.png') center/cover no-repeat;
+}
+.fame_hall_card-item:nth-of-type(3){
+    background: linear-gradient(0deg, rgba(69, 187, 131, 0.24), rgba(69, 187, 131, 0.24)), url('img/matrix.png') center/cover no-repeat;
+}
+.fame_hall_card-item:nth-of-type(4) {
+    background: linear-gradient(0deg, rgba(69, 104, 228, 0.53), rgba(69, 104, 228, 0.53)), url('img/star_wars.png') center/cover no-repeat;
+}
+.fame_hall_card-item:last-of-type {
+    background: linear-gradient(0deg, rgba(238, 184, 45, 0.59), rgba(238, 184, 45, 0.59)), url('img/lotr.png') center/cover no-repeat; 
+}
